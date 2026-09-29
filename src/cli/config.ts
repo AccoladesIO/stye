@@ -101,7 +101,7 @@ function normaliseExtensions(list: string[]): string[] {
     return list.map((ext) => ext.replace(/^\./, '').toLowerCase()).filter(Boolean);
 }
 
-/** Merges defaults < config file < CLI flags (CLI wins; arrays are replaced, not merged). */
+// Merges defaults < config file < CLI flags (CLI wins; arrays are replaced, not merged). 
 export function resolveOptions(cli: UserSettings, config: UserSettings): Options {
     const merged: UserSettings = { ...config, ...cli };
 

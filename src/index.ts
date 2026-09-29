@@ -1,8 +1,4 @@
 #!/usr/bin/env node
-/**
- * stye entry point. Contains no logic of its own: it only wires the
- * argument parser, config loader, watchers, debouncer and command runner together.
- */
 import { parseArgs } from './cli/args';
 import { loadConfig, resolveOptions } from './cli/config';
 import { HELP_TEXT, readVersion } from './cli/help';
