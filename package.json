@@ -1,5 +1,5 @@
 {
-  "name": "stye",
+  "name": "@oxaccolades/stye",
   "version": "1.2.0",
   "description": "A CLI tool to watch file changes and run commands",
   "main": "dist/index.js",
@@ -17,13 +17,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Accoladesio/stye.git"
+    "url": "git+https://github.com/oxaccolades/stye.git"
   },
-  "homepage": "https://github.com/Accoladesio/stye#readme",
+  "homepage": "https://github.com/oxaccolades/stye#readme",
   "bugs": {
-    "url": "https://github.com/Accoladesio/stye/issues"
+    "url": "https://github.com/oxaccolades/stye/issues"
   },
-  "author": "Accoladesio",
+  "author": "oxaccolades",
   "scripts": {
     "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\"",
     "build": "npm run clean && tsc -p tsconfig.build.json",
@@ -49,5 +49,8 @@
     "@types/node": "^20.14.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
